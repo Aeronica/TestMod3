@@ -93,7 +93,7 @@ public final class PigSpawnerCapability {
 					final IPigSpawnerFinite pigSpawnerFinite = (IPigSpawnerFinite) instance;
 					final CompoundNBT tagCompound = (CompoundNBT) nbt;
 
-					LogUtil.debug(LOGGER, LOG_MARKER, DebugUtil.getStackTrace(10), "Reading finite pig spawner from NBT: %s (Current: %d, New: %d)", instance, pigSpawnerFinite.getNumPigs(), tagCompound.getInt("NumPigs"));
+					LogUtil.debug(LOGGER, LOG_MARKER, DebugUtil.getStackTrace(10), "Reading finite pig spawner from NBT: {} (Current: {}, New: {})", instance, pigSpawnerFinite.getNumPigs(), tagCompound.getInt("NumPigs"));
 
 					pigSpawnerFinite.setNumPigs(tagCompound.getInt("NumPigs"));
 				}
